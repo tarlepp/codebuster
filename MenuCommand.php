@@ -19,8 +19,27 @@ class MenuCommand extends Command
     {
         $io = new SymfonyStyle($input, $output);
 
-        $io->choice('What you want to do', ['item 1', 'item 2', 'item 4']);
+        $choice = $io->choice('What you want to do', ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4']);
+
+        $method = 'method' . $choice;
+
+        $this->$method();
 
         return null;
+    }
+
+    private function methodA()
+    {
+        echo "method A\n\n";
+    }
+
+    private function methodB()
+    {
+        echo "method B\n\n";
+    }
+
+    private function methodC()
+    {
+        echo "method C\n\n";
     }
 }
