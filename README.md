@@ -4,7 +4,7 @@ Some dude asked questions on IRC, so I answered those.
 
 I just keep my (da_wunder) and codebuster chat messages on those logs.
 
-##tl;dr
+## tl;dr
 I added logs after this:
 ```
 18:38 < codebuster> can you do me one last favour?
