@@ -2,7 +2,7 @@
 
 Some dude asked questions on IRC, so I answered those.
 
-I just keep my (da_wunder) and codebuster chat messages on this one.
+I just keep my (da_wunder) and codebuster chat messages on those logs.
 
 ## Chat from `freenode/##php` channel:
 ```
