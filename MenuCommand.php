@@ -24,11 +24,17 @@ class MenuCommand extends Command
     {
         $this->io = new SymfonyStyle($input, $output);
 
-        $choice = $this->io->choice('What you want to do', ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4']);
+        $choices = ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4', false => 'exit'];
 
-        $method = 'method' . $choice;
+        $choice = $this->io->choice('What you want to do', $choices);
 
-        $this->$method();
+        while ($choice) {
+            $method = 'method' . $choice;
+
+            $this->$method();
+
+            $choice = $this->io->choice('What you want to do', $choices);
+        }
 
         return null;
     }
