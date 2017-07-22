@@ -26,14 +26,10 @@ class MenuCommand extends Command
 
         $choices = ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4', false => 'exit'];
 
-        $choice = $this->io->choice('What you want to do', $choices);
-
-        while ($choice) {
+        while ($choice = $this->io->choice('What you want to do', $choices)) {
             $method = 'method' . $choice;
 
             $this->$method();
-
-            $choice = $this->io->choice('What you want to do', $choices);
         }
 
         return null;
