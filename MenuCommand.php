@@ -8,6 +8,11 @@ use Symfony\Component\Console\Style\SymfonyStyle;
 
 class MenuCommand extends Command
 {
+    /**
+     * @var SymfonyStyle
+     */
+    private $io;
+
     public function __construct($name = null)
     {
         parent::__construct('menu');
@@ -17,9 +22,9 @@ class MenuCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): ?int
     {
-        $io = new SymfonyStyle($input, $output);
+        $this->io = new SymfonyStyle($input, $output);
 
-        $choice = $io->choice('What you want to do', ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4']);
+        $choice = $this->io->choice('What you want to do', ['A' => 'item 1', 'B' => 'item 2', 'C' => 'item 4']);
 
         $method = 'method' . $choice;
 
@@ -30,16 +35,19 @@ class MenuCommand extends Command
 
     private function methodA()
     {
-        echo "method A\n\n";
+        $this->io->writeln('Method A');
+        $this->io->ask('some question for A');
     }
 
     private function methodB()
     {
-        echo "method B\n\n";
+        $this->io->writeln('Method B');
+        $this->io->ask('some question for B');
     }
 
     private function methodC()
     {
-        echo "method C\n\n";
+        $this->io->writeln('Method C');
+        $this->io->ask('some question for C');
     }
 }
