@@ -4,6 +4,31 @@ Some dude asked questions on IRC, so I answered those.
 
 I just keep my (da_wunder) and codebuster chat messages on those logs.
 
+##tl;dr
+I added logs after this:
+```
+18:38 < codebuster> can you do me one last favour?
+18:48 < codebuster> can you remove the repo for this or make it private please?
+18:48 < da_wunder> why ?
+18:48 < da_wunder> it was just an example for you
+18:49 < da_wunder> why would i remove that or make it private ?
+18:50 < codebuster> it was, but I am learning this in order to work on my project. And even though I have my own separate classes and
+                    methods, there are still some similarities in my menu with what you have taught me.
+18:50 < da_wunder> still don't see the point
+18:51 < codebuster> I get paranoid, and worry easily
+18:51 < da_wunder> worry about example code :D
+18:51 < codebuster> its true, what you have there is no different than a documentation.
+18:51 < codebuster> but the date of your committed code is what makes me worried.
+18:52 < da_wunder> sounds like you've been doing some school / job interview project...
+18:52 < codebuster> sounds like that xd
+18:52 < codebuster> would sleep better if it wasn't online
+18:52 < da_wunder> and one more reason not to remove that
+18:55 < codebuster> :-(
+18:56 < codebuster> please
+18:56 -!- codebuster [~chatzilla@95.150.254.196] has quit [Quit: ChatZilla 0.9.93 [Firefox 54.0.1/20170628075643]]
+```
+
+
 ## Chat from `freenode/##php` channel:
 ```
 14:57 < codebuster> would all of this been easier using something else like symfony console component?
